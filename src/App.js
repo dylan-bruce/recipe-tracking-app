@@ -23,8 +23,8 @@ function App() {
   return (
     <div className="App">
       <header><h1>Delicious Food Recipes</h1></header>
-      <RecipeList recipe={recipe} deleteRecipe={deleteRecipe} />
-      <RecipeCreate addRecipe={addRecipe} />
+      <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
+      <RecipeCreate addRecipe={AddRecipe} />
     </div>
   );
 }
