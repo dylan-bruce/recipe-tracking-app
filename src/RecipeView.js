@@ -6,22 +6,22 @@ function RecipeView({ recipe, deleteRecipe }) {
 
     return(
         <tr>
-            <td key={(recipe.name)}>
+            <td>
                 <p>{(recipe.name)}</p>
             </td>
-            <td key={(recipe.cuisine)}>
+            <td>
                 <p>{(recipe.cuisine)}</p>
             </td>
-            <td key={(recipe.photo)}>
+            <td>
                 <img src={(recipe.photo)} alt="Recipe"/>
             </td>
-            <td className="content_td" key={(recipe.ingredients)}>
+            <td>
                 <p>{(recipe.ingredients)}</p>
             </td>
-            <td className="content_td" key={(recipe.preparation)}>
+            <td key={(recipe.preparation)}>
                 <p>{(recipe.preparation)}</p>
             </td>
-            <td key={(recipe.index)}>
+            <td>
                 <button name="delete" onClick={deleteRecipe}>Delete</button>
             </td>
         </tr>
