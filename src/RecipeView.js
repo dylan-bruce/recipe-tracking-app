@@ -7,10 +7,10 @@ function RecipeView({ recipe, deleteRecipe }) {
     return(
         <tr>
             <td>
-                <p>{(recipe.name)}</p>
+                {(recipe.name)}
             </td>
             <td>
-                <p>{(recipe.cuisine)}</p>
+                {(recipe.cuisine)}
             </td>
             <td>
                 <img src={(recipe.photo)} alt="Recipe"/>
