@@ -15,15 +15,15 @@ function App() {
     setRecipes([...recipes, newRecipe])
   };
 
-  const deleteRecipe = (recipeIndex) => {
-    setRecipes(recipes.filter((recipe, index) => index !== index));
+  function DeleteRecipe(recipeIndex) {
+    setRecipes(recipes.filter((recipe, index) => index !== recipeIndex));
   };
 
   
   return (
     <div className="App">
       <header><h1>Delicious Food Recipes</h1></header>
-      <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
+      <RecipeList recipes={recipes} deleteRecipe={DeleteRecipe} />
       <RecipeCreate addRecipe={AddRecipe} />
     </div>
   );

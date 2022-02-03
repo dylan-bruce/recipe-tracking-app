@@ -41,11 +41,56 @@ function RecipeCreate({ addRecipe }) {
       <table>
         <tbody>
           <tr>
-            <td><input type="text" name="name" placeholder="Name" onChange={handleNameChange} value={name} /></td>
-            <td><input type="text" name="cuisine" placeholder="Cuisine" onChange={handleCuisineChange} value={cuisine} /></td>
-            <td><input type="text" name="photo" placeholder="Photo" onChange={handlePhotoChange} value={photo} /></td>
-            <td><textarea type="text" name="ingredients" placeholder="Ingredients" onChange={handleIngredientsChange} value={ingredients} /></td>
-            <td><textarea type="text" name="preparation" placeholder="Preparation" onChange={handlePreparationChange} value={preparation} /></td>
+            <td>
+              <input 
+                required={true} 
+                type="text" 
+                name="name" 
+                placeholder="Name" 
+                onChange={handleNameChange} 
+                value={name} 
+                size="10"/>
+              </td>
+            <td>
+              <input 
+                required={true} 
+                type="text" 
+                name="cuisine" 
+                placeholder="Cuisine" 
+                onChange={handleCuisineChange} 
+                value={cuisine} 
+                size="10"/>
+              </td>
+            <td>
+              <input 
+                required={true} 
+                type="text" 
+                name="photo" 
+                placeholder="Photo" 
+                onChange={handlePhotoChange} 
+                value={photo} 
+                size="10"/>
+              </td>
+            <td>
+              <textarea 
+                required={true} 
+                type="text" 
+                name="ingredients" 
+                placeholder="Ingredients" 
+                onChange={handleIngredientsChange} 
+                value={ingredients} 
+                size="10"/>
+              </td>
+            <td>
+              <textarea 
+                required={true} 
+                type="text" 
+                name="preparation" 
+                placeholder="Preparation" 
+                onChange={handlePreparationChange} 
+                value={preparation} 
+                size="10"/>
+              </td>
             <td>
               <button type="submit" onClick={handleSubmit} >Create</button>
             </td>
